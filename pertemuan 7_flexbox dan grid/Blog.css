@@ -1,0 +1,103 @@
+body {
+    background-color: gray;
+}
+header .nav-1 {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+    margin: -10px;
+}
+.img-item {
+    width: 5opx;
+}
+ul.menu {
+        display: flex;
+        list-style: none;
+
+        &li {
+            margin-right: 50px;
+            
+            &a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+}
+.nav-2 {
+    display: flex;
+    justify-content: space-between;
+    background-color: pink;
+    align-items: center;
+    margin: -10px;
+    font-weight: bold;
+
+    & .sosmed a {
+    text-decoration: nonr;
+    padding-right: 10px;
+    }
+}
+#banner {
+    margin: -10px;
+}
+.card {
+   padding: 15px;
+   background-color: white;
+   display: flex;
+   justify-content: space-around;
+  
+   & .section-1 {
+      margin-right: 5px;
+      &.content-1 {
+        background-image: url("https://via.placeholder.com/400x300");
+        background-size: cover;
+        width: 200px;
+
+        & span {
+            background-color: red;
+            color: white;
+            padding: 5px;
+            border-radius: 25px;
+        }
+      }
+      
+   }
+
+   & .section-2 {
+    margin-right: 5px;
+    &.content-1 {
+      background-image: url("https://via.placeholder.com/400x300");
+      background-size: cover;
+      width: 200px;
+
+      & span {
+          background-color: red;
+          color: white;
+          padding: 5px;
+          border-radius: 25px;
+      }
+    }
+    
+ }
+
+ & .section-3 {
+    margin-right: 5px;
+    &.content-1 {
+      background-image: url("https://via.placeholder.com/400x300");
+      background-size: cover;
+      width: 200px;
+
+      & span {
+          background-color: red;
+          color: white;
+          padding: 5px;
+          border-radius: 25px;
+      }
+    }
+    
+ }
+
+}
+
+   

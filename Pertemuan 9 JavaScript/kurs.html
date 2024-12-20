@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>menghitung kurs rupiah ke dollar</title>
+</head>
+<body>
+    <h3>Menghitung kurs rupiah ke dollar</h3>
+    <input type="number" id="rupiah" placeholder="masukan jumlah rupiah" onkeyup="rupiahkedollar()" >
+    <p>Nilai Dollar : $<span id="dollar">0</span></p>
+    
+    <script>
+        function rupiahkedollar () {
+            let rupiah = document.getElementById('rupiah').value;
+
+            let dollar = 15926
+          document.getElementById('dollar').innerHTML = rupiah/dollar;
+        }
+    </script>
+</body>
+</html>

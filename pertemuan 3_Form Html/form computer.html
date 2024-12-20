@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Pemesanan Barang</title>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 500px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+        }
+        input[type="text"], textarea, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .form-group{
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+      
+         input[type="submit"] {
+            width: 100%;
+            background-color: #4CAF50;
+            color: white;
+            padding: 14px 20px;
+            margin: 8px 0;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        label {
+            font-weight: bold;
+        }
+        
+         .image-preview{
+            width: 70px;
+            height: 70px;
+            background-color: #ddd;
+            display: block;
+            margin-right: 10px;
+         }
+
+        .checkbox {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body style="font-family: cursive; padding: 25px;">
+    <div style="justify-content: center; display: flex;">
+        <div style="width: 80%; display: flex; justify-content: space-around; border: 2px solid black; padding: 3px;">
+            <a href=""style="color :black; text-decoration: none ">Home</a>|
+            <a href=""style="color :black; text-decoration: none ">General Link</a>|
+            <a href=""style="color :black; text-decoration: none ">Transaction History</a>|
+            <a href=""style="color :black; text-decoration: none ">Police</a>|
+            <a href=""style="color :black; text-decoration: none ">Logout</a>
+        </div>
+    </div>
+    <form>
+        <h2>Form Pemesanan Barang</h2>
+        <div style="display: flex;">
+            <div>
+            <!--File Upload Button-->
+            <table>
+                <tr style=" vertical-align: top;" rowspan="7">
+                    <td>
+                        <div>
+                            <img src="mackbook air.jpg" alt="laptop" class="image-priview" id="image-priview" width="150">
+                            <!--File Upload Button-->
+                        </div>
+                     </td>
+                </tr>
+            </table>
+        </div>
+        <table>
+        <td>
+<div style="margin-left: 100px;">
+      <div class="form-grup" style="display: flex; justify-content: space-between;">    
+        <label style="width: 200px;" for="title">Title Here:</label>
+        <input type="text" id="title" name="title" placeholder="MacBook Air £800">
+    </div>
+
+     <div class="form-grup" style="display: flex; justify-content: space-between;">
+        <label style="width: 200px;" for="description">Description:</label>
+        <textarea id="description" name="description" rows="3">Year: 2004 
+    Model:
+    Condition: Mint></textarea> 
+                    </div>
+
+                    <div class="form-grup" style="display: flex; justify-content: space-between;">
+        <label style="width: 200px;" for="account-number">Account Number:</label>
+        <input type="text" id="account-number" name="account-number" placeholder="123-456-789-0">
+         </div>
+
+<div class="form-grup" style="display: flex; justify-content: space-between;" >
+        <label style="width: 200px;" for="bank">Bank:</label>
+        <select id="bank" name="bank">
+            <option value="hsbc">HSBC</option>
+            <option value="bca">BCA</option>
+            <option value="bni">BNI</option>
+        </select>
+</div>
+
+      <div class="form-grup" style="display: flex; justify-content: space-between;">
+        <label style="width: 200px;" for="account-holder">Account Holder:</label>
+        <input type="text" id="account-holder" name="account-holder" placeholder="Name Here">
+    </div>
+
+        <div class="checkbox" style="color:green ;">
+            <input type="checkbox" id="send-mobile" name="send-mobile" checked>
+            <label for="send-mobile">Send to Mobile Phone</label><br>
+            <input type="checkbox" id="send-email" name="send-email" checked>
+            <label for="send-email">Send to Email</label>
+        </div>
+
+      <div class="form-group" style="display: flex; justify-content: space-between;">
+        <label style="width: 200px;" for="mobile-phone">Send to Mobile Phone:</label>
+        <input type="text" id="mobile-phone" name="mobile-phone" placeholder="1234567890, 1234567891">
+      </div>
+
+      <div class="form-grup" style="display: flex; justify-content: space-between;">
+        <label style="width: 200px;" for="email">Send to Email:</label>
+        <input type="text" id="email" name="email" placeholder="mfmm2g13@satonacuk, fys_06@yahoo.com">
+    </div> 
+        <input type="submit" value="Generate Nabr Link">
+        </td>
+</tr>
+</div>
+</table>
+    </form>
+ </body>
+</html>

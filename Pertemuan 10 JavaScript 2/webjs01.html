@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title>Belajar Js</title>
+    <script>
+        function fungsiku(){
+            let warna = document.getElementById("nf1").value;
+            console.log("anda pilih warna : " + warna);
+            document.body.styl.bacgroundColor = warna;
+//var x = documen.c   
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Pilih warna:
+        <select name="warna" onchange="fungsiku()" >
+            <option value="red">merah</option>
+            <option value="yellow">kuning</option>
+            <option value="green">hijau</option>
+            <option value="blue">biru</option>
+            <option value="pink">pink</option>
+            <option value="purple">ungu</option>
+
+        </select>
+    </form>
+</body>
+</html>

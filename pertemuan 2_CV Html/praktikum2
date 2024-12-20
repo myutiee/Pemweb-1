@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout html</title>
+    <script src="https://kit.fontawesome.com/e2bb076cb4.js" crossorigin="anonymous"></script>
+    <style>
+        section{
+            margin-bottom: 20px;
+            text-align: justify;
+        }
+        .g1{
+            height: 50px;
+            margin-right: 6px;
+            border: 2px solid black;
+
+        }.g2{
+            height: 50px;
+            border: 2px solid black;
+        }
+        a i {
+            font-size: 40px;
+            color: black; 
+        }
+    </style>
+</head>
+<body>
+    <fieldset style="margin: 0px 250px;">
+        <legend>I4F - Direcctory Profile Page</legend>
+        <header>
+            <div style="display: flex; justify-content: space-between;" >
+                 <div style="border: 2px solid black; padding:10px; margin-left: 20px;">
+                     <img src="Foto Mutia R.A .jpeg" width="150px"><br>
+                 </div>
+                 <div style="margin: 0px 70px 0px 20px;">
+                     <h1 style="line-height: 10px;">Profile Name</h1>
+                     <h3>Mutia Rahma Amaliyah</h3>
+                     <p>Alamat : Kp. Lengis Kab.Bogor Jawa Barat Indonesia </p>
+                     <p>Email : <a href="mailto:mutiarhma15@gmail.com">mutiarahma15@gmail.com</a></p>
+                     <p>Telephone : <a href="tel:085817154758">085817154758</a></p>
+                 </div>
+                  <div style="text-align: center;"> 
+                     <h3><u>Sosmed</u></h3>
+                     <div>
+                      <a href="https://Instagram.com/muttxzly.hr">
+                        <i class="fa-brands fa-square-instagram"></i><br>
+                      </a>
+                      <a href="https://youTube.com/mutiaaa107">
+                        <i class="fa-brands fa-youtube"></i><br>
+                      </a>
+                      <a href="https://Github.com/myutiee">
+                        <i class="fa-brands fa-square-github"></i><br>
+                      </a>
+                     </div>
+                 </div>
+            </div>
+         </header>
+         <main style="padding: 30px;">
+            <article>
+                <section>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem deserunt officiis provident nihil, magni libero, quae optio ullam nulla unde quaerat! Rerum, quae asperiores? Iste repellat nobis suscipit adipisci ex. Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veniam minima dicta provident a, temporibus odit architecto illum iste iure eius! Tempora ullam quis facilis dolor, velit ipsa eum blanditiis?
+                </section>
+                <section>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, error. Quis corrupti, similique iure tenetur nisi porro eligendi id. Voluptates deserunt eum quis voluptate consequuntur vel, culpa dolorem aperiam fuga!. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia, nulla architecto exercitationem velit voluptate quidem pariatur, unde perferendis ad recusandae temporibus sunt commodi blanditiis quisquam facilis? Nisi commodi repellendus autem.
+                </section>
+            </article>
+         </main>
+         <footer>
+            <div style="display: flex; justify-content: center;">
+                <fieldset>
+                    <legend>YouTube</legend>
+                    <iframe  width="200" height="150" :src=" <iframe width="560" height="315" src="https://www.youtube.com/embed/9KfdfSojo34?si=1SM_yB_tj7PI2b8v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </fieldset>
+                <fieldset>
+                    <legend>Blog Thumbnail</legend> 
+                    <div style="display: flex; justify-content: center;">
+                        <div>
+                          <a href="https://images.app.goo.gl/hzii1D33gDD9ZyrB9">
+                            <img src="https://berita.99.co/wp-content/uploads/2021/11/renjun.jpg" alt="Thumbnail" class="g1"></a>
+                        </div>
+                       <div>
+                          <a href="https://images.app.goo.gl/hzii1D33gDD9ZyrB9">
+                            <img src="https://berita.99.co/wp-content/uploads/2021/11/haechan-1.jpg" alt="Thumbnail" class="g2"></a>
+                       </div> 
+                    </div>
+                    <div style="display: flex; justify-content: center;">
+                    <div>
+                        <a href="https://images.app.goo.gl/hzii1D33gDD9ZyrB9">
+                          <img src="https://berita.99.co/wp-content/uploads/2021/11/renjun.jpg" alt="Thumbnail" class="g1"></a>
+                      </div>
+                     <div>
+                        <a href="https://images.app.goo.gl/hzii1D33gDD9ZyrB9">
+                          <img src="https://berita.99.co/wp-content/uploads/2021/11/haechan-1.jpg" alt="Thumbnail" class="g2"></a>
+                     </div> 
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>Attachments</legend>
+                    <table cellpadding="5">
+
+                        <tr>
+                            <td><i class="fa-solid fa-file-image"></i></td>
+                            <td><a href="Foto Mutia R.A .jpeg" download="Foto Mutia Rahma A">Foto Mutia Rahma Amaliyah</a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-file-image"></i></td>
+                            <td><a href="Foto Mutia R.A .jpeg" download="Foto My CV">Foto My CV</a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-file-image"></i></td>
+                            <td><a href="Foto Mutia R.A .jpeg" download="CV Mutia Rahma A">CV Mutia Rahma Amaliyah</a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-file-image"></i></td>
+                            <td><a href="Foto Mutia R.A .jpeg" download="Profile Mutia Rahma A">Profile Mutia Rahma Amaliyah</a></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fa-solid fa-file-image"></i></td>
+                            <td><a href="Foto Mutia R.A .jpeg" download="Youtube Mutia Rahma A">Youtube Mutia Rahma Amaliyah</a></td>
+                        </tr>
+                    </table>
+                </fieldset>
+         </footer>
+    </fieldset>
+</body>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Services - Landing Page</title>
+    <!-- Link Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-dark text-white text-center py-4">
+        <h1>Luxury Stay Hotel</h1>
+        <p>Your Comfort, Our Priority</p>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav class="bg-light py-2">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#branches">Branches</a></li>
+                <li class="nav-item"><a class="nav-link" href="#promotions">Promotions</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Image Slider -->
+    <div id="imageSlider" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="hotel1.jpg" class="d-block w-100" alt="Hotel 1">
+            </div>
+            <div class="carousel-item">
+                <img src="hotel2.jpg" class="d-block w-100" alt="Hotel 2">
+            </div>
+            <div class="carousel-item">
+                <img src="hotel3.jpg" class="d-block w-100" alt="Hotel 3">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#imageSlider" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#imageSlider" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        </button>
+    </div>
+
+    <!-- About Us -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">About Us</h2>
+            <p class="text-center">Luxury Stay Hotel is dedicated to providing premium accommodation with the best services for our valued guests.</p>
+        </div>
+    </section>
+
+    <!-- Branches -->
+    <section id="branches" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Our Branches</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="branch1.jpg" class="card-img-top" alt="Branch 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Branch 1 - New York</h5>
+                            <p class="card-text">Located in the heart of the city, offering luxury amenities.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="branch2.jpg" class="card-img-top" alt="Branch 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Branch 2 - Paris</h5>
+                            <p class="card-text">Experience elegance in the city of lights.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="branch3.jpg" class="card-img-top" alt="Branch 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Branch 3 - Tokyo</h5>
+                            <p class="card-text">Modern design meets traditional hospitality.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Promotions -->
+    <section id="promotions" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center">Promotions</h2>
+            <table class="table table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th>Package</th>
+                        <th>Price</th>
+                        <th>Duration</th>
+                        <th>Terms & Conditions</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Weekend Getaway</td>
+                        <td>$200</td>
+                        <td>2 Nights</td>
+                        <td>Min. 2 Persons</td>
+                        <td>Perfect for short holidays.</td>
+                    </tr>
+                    <tr>
+                        <td>Family Package</td>
+                        <td>$500</td>
+                        <td>3 Nights</td>
+                        <td>Max. 4 Persons</td>
+                        <td>Fun for the whole family.</td>
+                    </tr>
+                    <tr>
+                        <td>Honeymoon Special</td>
+                        <td>$700</td>
+                        <td>4 Nights</td>
+                        <td>Couples Only</td>
+                        <td>Romantic getaway for newlyweds.</td>
+                    </tr>
+                    <tr>
+                        <td>Business Package</td>
+                        <td>$400</td>
+                        <td>2 Nights</td>
+                        <td>Includes Meeting Rooms</td>
+                        <td>Best for corporate trips.</td>
+                    </tr>
+                    <tr>
+                        <td>Summer Deal</td>
+                        <td>$300</td>
+                        <td>3 Nights</td>
+                        <td>Limited Time</td>
+                        <td>Special rates for summer.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your Name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Your Email">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Luxury Stay Hotel. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Link Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

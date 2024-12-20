@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+
+    <style>
+        span {
+            color: red;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="post" onsubmit="return requiredInput()">
+        <div><input type="text" id="nama" placeholder="Nama">
+            <span id="nama_eror">Input Tidak Valid</span></div>
+        <div><input type="text" id="email" placeholder="Email">
+            <span id="email_eror">Input Tidak Valid</span></div>
+        <div><input type="text" id="jam" placeholder="Jam keberangkatan">
+            <span id="jam_eror">Input Tidak Valid</span></div>
+        <div><input type="text" id="tujuan" placeholder="Tujuan keberangkatan">
+            <span id="tujuan_eror">Input Tidak Valid</span></div>
+        <div><input type="text" id="tiket" placeholder="Jumlah Tiket">
+            <span id="tiket_eror">Input Tidak Valid</span></div>
+
+            <button type="submit">submit</button>
+    </form>
+
+    <script>  
+        //deklarasi
+        let nama = document.getElementById('nama')
+        let email = document.getElementById('email')
+        let jam = document.getElementById('jam')
+        let tujuan = document.getElementById('tujuan')
+        let tiket = document.getElementById('tiket')
+
+        let nama_eror = document.getElementById('nama_eror')
+        let email_eror = document.getElementById('email_eror')
+        let jam_eror = document.getElementById('jam_eror')
+        let tujuan_eror = document.getElementById('tujuan_eror')
+        let tiket_eror = document.getElementById('tiket_eror')
+
+        //function
+        function requiredInput() {
+            if(nama.value == '') {
+                nama_eror.style.display = 'block';
+                return false;
+            }else if (nama.value.length > 30){
+                nama_eror.style.display = 'block';
+                return false;
+            }else{
+                nama_eror.style.display = 'none';
+            }
+
+            if(email.value == '') {
+                email_eror.style.display = 'block';
+                return false;
+            }  
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Belajar JS</title>
+    <script>
+        function otentikasi(){
+            const admin = "ahmad2017";
+            const passadmin = "integrity";
+
+            let uname = document.getElementById("username").value;
+            let pass = document.getElementById("pass").value;
+
+            if(uname == admin && pass == passadmin){
+                alert("sukses Login");
+            }else{
+                alert("gagal login");
+                window.location.href = "",false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form method="post" action="">
+        Username : <input type="text" name="username">
+         <br>
+        Password : <input type="password" name="password">
+         <input type="submit" value="Login" onclick="otentikasi()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+        .error {
+            color: red;
+            font-size: 0.9em;
+        }
+        .invalid {
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Form Pemesanan Tiket</h1>
+    <form id="ticketForm">
+        <label for="name">Nama Pelanggan:</label>
+        <input type="text" id="name" name="name" maxlength="30">
+        <span id="nameError" class="error"></span>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+        <span id="emailError" class="error"></span>
+        <br><br>
+
+        <label for="time">Jam Keberangkatan:</label>
+        <input type="text" id="time" name="time" placeholder="HH:MM">
+        <span id="timeError" class="error"></span>
+        <br><br>
+
+        <label for="destination">Tujuan Keberangkatan:</label>
+        <input type="text" id="destination" name="destination">
+        <span id="destinationError" class="error"></span>
+        <br><br>
+
+        <label for="tickets">Jumlah Tiket:</label>
+        <input type="number" id="tickets" name="tickets" min="1" max="10">
+        <span id="ticketsError" class="error"></span>
+        <br><br>
+
+        <button type="button" onclick="validateForm()">Submit</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function validateForm() {
+            let isValid = true;
+
+            // Clear previous errors
+            document.querySelectorAll('.error').forEach(el => el.textContent = '');
+            document.querySelectorAll('input').forEach(el => el.classList.remove('invalid'));
+
+            // Get form values
+            const name = document.getElementById('name').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const time = document.getElementById('time').value.trim();
+            const destination = document.getElementById('destination').value.trim();
+            const tickets = document.getElementById('tickets').value.trim();
+
+            // Validate Name
+            if (!name) {
+                isValid = false;
+                document.getElementById('nameError').textContent = 'Nama pelanggan wajib diisi.';
+                document.getElementById('name').classList.add('invalid');
+            }
+
+            // Validate Email
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!email || !emailRegex.test(email)) {
+                isValid = false;
+                document.getElementById('emailError').textContent = 'Format email tidak valid.';
+                document.getElementById('email').classList.add('invalid');
+            }
+
+            // Validate Time
+            const timeRegex = /^([01]?\d|2[0-3]).([0-5]\d)$/;
+            if (!time || !timeRegex.test(time)) {
+                isValid = false;
+                document.getElementById('timeError').textContent = 'Format jam tidak valid (HH.MM).';
+                document.getElementById('time').classList.add('invalid');
+            }
+
+            // Validate Destination
+            if (!destination) {
+                isValid = false;
+                document.getElementById('destinationError').textContent = 'Tujuan keberangkatan wajib diisi.';
+                document.getElementById('destination').classList.add('invalid');
+            }
+
+            // Validate Tickets
+            const ticketNumber = parseInt(tickets, 10);
+            if (!tickets || isNaN(ticketNumber) || ticketNumber < 1 || ticketNumber > 10) {
+                isValid = false;
+                document.getElementById('ticketsError').textContent = 'Jumlah tiket harus antara 1-10.';
+                document.getElementById('tickets').classList.add('invalid');
+            }
+
+            // Display result if valid
+            if (isValid) {
+                document.getElementById('result').innerHTML = `
+                    <h2>Data Pemesanan</h2>
+                    <p><strong>Nama Pelanggan:</strong> ${name}</p>
+                    <p><strong>Email:</strong> ${email}</p>
+                    <p><strong>Jam Keberangkatan:</strong> ${time}</p>
+                    <p><strong>Tujuan Keberangkatan:</strong> ${destination}</p>
+                    <p><strong>Jumlah Tiket:</strong> ${tickets}</p>
+                `;
+            } else {
+                document.getElementById('result').innerHTML = '';
+            }
+        }
+    </script>
+</body>
+</html>
